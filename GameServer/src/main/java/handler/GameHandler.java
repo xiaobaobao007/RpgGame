@@ -2,11 +2,10 @@ package handler;
 
 import aop.GameFacade;
 import aop.GameFacadeProxy;
-import dao.AccountDao;
+import dao.AccountDAO;
 import db.Account;
 
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * @author xiaobaobao
@@ -29,6 +28,6 @@ public class GameHandler implements GameFacade {
 		Account account = new Account();
 		account.setAccount(user);
 		account.setCreateTime(Calendar.getInstance().getTime());
-		AccountDao.dao.insertAccount(account);
+		AccountDAO.dao.insertAccount(account);
 	}
 }

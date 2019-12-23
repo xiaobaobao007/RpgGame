@@ -10,9 +10,9 @@ import framework.db.NullBaseObject;
  * @author xiaobaobao
  * @date 2019/12/14，20:54
  */
-public class AccountDao extends BaseGSDao {
+public class AccountDAO extends BaseGSDao {
 
-	public static AccountDao dao = new AccountDao();
+	public static AccountDAO dao = new AccountDAO();
 
 	public Account getAccount(String accountId) {
 		BaseObject baseObject = getCacheObject(Constant.CACHE_TYPE_ACCOUNT, Account.PREFIX + accountId);

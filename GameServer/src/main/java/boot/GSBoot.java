@@ -1,6 +1,7 @@
 package boot;
 
-import dao.AccountDao;
+import dao.AccountDAO;
+import db.Account;
 import framework.boot.BaseBoot;
 import framework.manager.CacheManager;
 import framework.manager.GameLogManager;
@@ -21,6 +22,10 @@ public class GSBoot extends BaseBoot {
 		cacheManager = new CacheManager();
 		MybatisManager.init();
 		GameHandler.init();
+		Account a = new Account();
+		a.setAccount("1");
+		AccountDAO.dao.insertAccount(a);
+		MybatisManager.getSession().commit();
 //		String ip = PropKit.use("conf/server.conf").get("center.ip");
 	}
 }
