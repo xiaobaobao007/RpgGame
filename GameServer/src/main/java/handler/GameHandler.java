@@ -1,9 +1,11 @@
 package handler;
 
+import anotation.Handler;
 import aop.GameFacade;
 import aop.GameFacadeProxy;
 import dao.AccountDAO;
 import db.Account;
+import netty.CSProtocolKey;
 
 import java.util.Calendar;
 
@@ -14,16 +16,15 @@ import java.util.Calendar;
 public class GameHandler implements GameFacade {
 
 	public static GameFacade facade;
-	public static GameFacade me;
 
 	public static void init() {
 		GameHandler gameHandler = new GameHandler();
 		GameFacadeProxy proxy = new GameFacadeProxy();
 		facade = (GameFacade) proxy.bind(gameHandler);
-		me = new GameHandler();
 	}
 
 	@Override
+	@Handler(CSProtocolKey.LOGIN)
 	public void addAccount(String user) {
 		Account account = new Account();
 		account.setAccount(user);

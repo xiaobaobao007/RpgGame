@@ -8,6 +8,12 @@
         WHERE account = #{account};
     </select>
 
+    <select id="getAccountByTest" parameterType="hashMap" resultType="hashMap">
+        SELECT count(*)
+        FROM account
+        WHERE userId >= #{userId};
+    </select>
+
     <insert id="insertAccount" parameterType="Account">
         INSERT INTO account (userId, account, password, email, createTime, registIp)
         VALUES (#{userId}, #{account}, #{password}, #{email}, #{createTime}, #{registIp});

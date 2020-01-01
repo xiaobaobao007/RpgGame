@@ -1,5 +1,5 @@
 import boot.GSBoot;
-import framework.manager.GameLogManager;
+import manager.GameLogManager;
 
 import java.io.FileInputStream;
 import java.io.InputStream;

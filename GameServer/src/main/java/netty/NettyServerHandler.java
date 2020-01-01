@@ -1,8 +1,8 @@
 package netty;
 
-import framework.manager.GameLogManager;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import manager.GameLogManager;
 
 import java.net.SocketAddress;
 

@@ -1,5 +1,6 @@
 package framework.manager;
 
+import manager.GameLogManager;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.ExecutorType;
 import org.apache.ibatis.session.SqlSession;

@@ -58,6 +58,11 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.42.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.10</version>
+        </dependency>
     </dependencies>
 
 </project>

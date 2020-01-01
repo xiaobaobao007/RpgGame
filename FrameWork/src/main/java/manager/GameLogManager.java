@@ -1,15 +1,8 @@
-package framework.manager;
-
+package manager;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * 日志记录
- *
- * @author xiaobaobao
- * @date 2019/12/14，20:32
- */
 public class GameLogManager {
 
 	public static Logger logger = LoggerFactory.getLogger(GameLogManager.class);

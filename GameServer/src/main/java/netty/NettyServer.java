@@ -1,12 +1,12 @@
 package netty;
 
-import framework.manager.GameLogManager;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.timeout.IdleStateHandler;
+import manager.GameLogManager;
 import netty.code.JDKDecoder;
 import netty.code.JDKEncoder;
 
